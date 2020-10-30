@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <title>Document.Calculatrice</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Calculatrice</h1>
+            <div id="calculator">
+                <div id="header">
+                    <input type="text" id="number" value="0" autocomplete="off" disabled />
+                </div>
+                <div id="body">
+                    
+                    <span class="buttons" data-value="" onClick=  "value(%);">%</span>
+                    <span class="buttons"data-value=""onClick= "value(Cos);">Cos</span>
+                    <span class="buttons"data-value=""onClick= "value(Sin);">Sin</span>
+                    <span class="buttons"data-value=""onClick= "value(CM);">CM</span>
+                    <span class="buttons"data-value=""onClick= "value(CI);">CI</span>
+                    <span class="buttons"data-value=""onClick= "value(tan);">tan</span>
+                    <span class="buttons"data-value=""onClick= "value(ln);">ln</span>
+                    <span class="buttons"data-value=""onClick= "value(²);">X²</span>
+                    <span class="buttons"data-value=""onClick= "value(!);">!</span>
+                    <span class="buttons"data-value=""onClick= "value(e);">Exp</span>
+                    <span class="buttons"data-value=""onClick= "value(^);">^</span>
+                    <span class="buttons"data-value=""onClick= "value(());">(</span>
+                    <span class="buttons"data-value=""onClick= "value());">)</span>
+                    <span class="buttons"data-value=""onClick= "value(M+);">M+</span>
+                    <span class="buttons"data-value=""onClick= "value(M-);">M-</span>
+                    <span class="buttons"data-value=""onClick= "value(CI);">CI</span>
+                    <span class="buttons"data-value=""onClick= "value(7);">7</span>
+                    <span class="buttons"data-value=""onClick= "value(8);">8</span>
+                    <span class="buttons"data-value=""onClick= "value(9);">9</span>
+                    <span class="buttons"data-value=""onClick= "value(/);">/</span>
+                    <span class="buttons"data-value=""onClick= "value(4);">4</span>
+                    <span class="buttons"data-value=""onClick= "value(5);">5</span>
+                    <span class="buttons"data-value=""onClick= "value(6);">6</span>
+                    <span class="buttons"data-value=""onClick= "value(*);">*</span>
+                    <span class="buttons"data-value=""onClick= "value(1);">1</span>
+                    <span class="buttons"data-value=""onClick= "value(2);">2</span>
+                    <span class="buttons"data-value=""onClick= "value(3);">3</span>
+                    <span class="buttons"data-value=""onClick= "value(-);">-</span>
+                    <span class="buttons"data-value=""onClick= "value(0);">0</span>
+                    <span class="buttons"data-value=""onClick= "value(.);">.</span>
+                    <span class="buttons"data-value=""onClick= "value(=);">=</span>
+                    <span class="buttons"data-value=""onClick= "value(+);">+</span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var calc = new Calculator();
+                calc.run();
+            });
+        </script>
+    </body>
+</html>
